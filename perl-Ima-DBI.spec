@@ -3,8 +3,8 @@
 %bcond_with	tests	# Perform "make test"
 
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Ima
-%define	pnam	DBI
+%define		pdir	Ima
+%define		pnam	DBI
 Summary:	Ima::DBI - database connection caching and organization
 Summary(pl):	Ima::DBI - organizacja i buforowanie po³±czenia z baz± danych
 Name:		perl-Ima-DBI
