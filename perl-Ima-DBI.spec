@@ -24,7 +24,7 @@ Summary(uk):	Модуль для Perl %{pdir}::%{pnam}
 Summary(zh_CN):	%{pdir}::%{pnam} Perl дё©И
 Name:		perl-Ima-DBI
 Version:	0.33
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -36,6 +36,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-DBI
 BuildRequires:	perl(Test::More)
 %endif
+Requires:	perl-DBIx-ContextualFetch
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
