@@ -5,23 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Ima
 %define	pnam	DBI
-Summary:	%{pdir}::%{pnam} perl module
-Summary(cs):	Modul %{pdir}::%{pnam} pro Perl
-Summary(da):	Perlmodul %{pdir}::%{pnam}
-Summary(de):	%{pdir}::%{pnam} Perl Modul
-Summary(es):	Módulo de Perl %{pdir}::%{pnam}
-Summary(fr):	Module Perl %{pdir}::%{pnam}
-Summary(it):	Modulo di Perl %{pdir}::%{pnam}
-Summary(ja):	%{pdir}::%{pnam} Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	%{pdir}::%{pnam} ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul %{pdir}::%{pnam}
-Summary(pl):	Modu³ perla %{pdir}::%{pnam}
-Summary(pt_BR):	Módulo Perl %{pdir}::%{pnam}
-Summary(pt):	Módulo de Perl %{pdir}::%{pnam}
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
-Summary(sv):	%{pdir}::%{pnam} Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
-Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
+Summary:	Ima::DBI - database connection caching and organization
+Summary(pl):	Ima::DBI - organizacja i buforowanie po³±czenia z baz± danych
 Name:		perl-Ima-DBI
 Version:	0.33
 Release:	2
@@ -34,7 +19,6 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-DBI
-BuildRequires:	perl(Test::More)
 %endif
 Requires:	perl-DBIx-ContextualFetch
 BuildArch:	noarch
