@@ -33,8 +33,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Ima::DBI attempts to organize and facilitate caching and more efficient
 use of database connections and statement handles.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ima::DBI próbuje zorganizowaæ i u³atwiæ buforowanie oraz bardziej
+wydajne wykorzystanie po³±czeñ z baz± danych i uchwytów do
+komunikatów.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
