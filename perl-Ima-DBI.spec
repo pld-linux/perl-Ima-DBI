@@ -1,3 +1,7 @@
+
+# Conditional build:
+%bcond_with	tests	# Perform "make test"
+
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Ima
 %define	pnam	DBI
@@ -19,14 +23,18 @@ Summary(sv):	%{pdir}::%{pnam} Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl %{pdir}::%{pnam}
 Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
 Name:		perl-Ima-DBI
-Version:	0.29
+Version:	0.31
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/T/TM/TMTM/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a98ae327a044c41a1b8306d52714f9fb
+# Source0-md5:	629c07c389a5ebd7b0bc282998017e7b
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-DBI
+BuildRequires:	perl(Test::More)
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,12 +54,13 @@ komunikatów.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-#%%{__make} test
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
