@@ -19,12 +19,12 @@ Summary(sv):	%{pdir}::%{pnam} Perlmodul
 Summary(uk):	Модуль для Perl %{pdir}::%{pnam}
 Summary(zh_CN):	%{pdir}::%{pnam} Perl дё©И
 Name:		perl-Ima-DBI
-Version:	0.28
-Release:	2
+Version:	0.29
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/T/TM/TMTM/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	86bae33fa9c9da284a307eda7a8f90ca
+# Source0-md5:	a98ae327a044c41a1b8306d52714f9fb
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
