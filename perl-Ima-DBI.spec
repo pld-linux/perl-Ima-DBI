@@ -25,7 +25,8 @@ Summary(zh_CN):	%{pdir}::%{pnam} Perl Ä£¿é
 Name:		perl-Ima-DBI
 Version:	0.33
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/authors/id/T/TM/TMTM/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3d72cfbca2aa5e2b631020122858e3ae
