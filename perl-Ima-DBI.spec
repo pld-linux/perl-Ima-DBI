@@ -6,7 +6,7 @@
 %define		pdir	Ima
 %define		pnam	DBI
 Summary:	Ima::DBI - database connection caching and organization
-Summary(pl):	Ima::DBI - organizacja i buforowanie po³±czenia z baz± danych
+Summary(pl.UTF-8):   Ima::DBI - organizacja i buforowanie poÅ‚Ä…czenia z bazÄ… danych
 Name:		perl-Ima-DBI
 Version:	0.33
 Release:	2
@@ -28,10 +28,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Ima::DBI attempts to organize and facilitate caching and more efficient
 use of database connections and statement handles.
 
-%description -l pl
-Ima::DBI próbuje zorganizowaæ i u³atwiæ buforowanie oraz bardziej
-wydajne wykorzystanie po³±czeñ z baz± danych i uchwytów do
-komunikatów.
+%description -l pl.UTF-8
+Ima::DBI prÃ³buje zorganizowaÄ‡ i uÅ‚atwiÄ‡ buforowanie oraz bardziej
+wydajne wykorzystanie poÅ‚Ä…czeÅ„ z bazÄ… danych i uchwytÃ³w do
+komunikatÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
