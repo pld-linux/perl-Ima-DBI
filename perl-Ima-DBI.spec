@@ -1,7 +1,7 @@
-
+#
 # Conditional build:
-%bcond_with	tests	# Perform "make test"
-
+%bcond_with	tests	# perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Ima
 %define		pnam	DBI
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/T/TM/TMTM/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1ccc6eb89ec4beb1b231fc69209b87c6
+URL:		http://search.cpan.org/dist/Ima-DBI/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -53,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{perl_vendorlib}/%{pdir}
-%{perl_vendorlib}/%{pdir}/%{pnam}.pm
+%dir %{perl_vendorlib}/Ima
+%{perl_vendorlib}/Ima/DBI.pm
 %{_mandir}/man3/*
