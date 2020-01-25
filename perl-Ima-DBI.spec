@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Ima
 %define		pnam	DBI
 Summary:	Ima::DBI - database connection caching and organization
